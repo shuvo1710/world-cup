@@ -74,6 +74,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 50px;
 
     
     
@@ -133,5 +134,38 @@ body{
     font-size: 16px;
    font-weight: 400;
    color: #4D4D4D;
+    
+}
+/* footer */
+#footer{
+    background-color: #161616;
+    margin: 0 auto;
+    padding: 130px 0;
+    
+}
+.footer-head{
+    color: #FFFF;
+    text-align: center;
+    
+    font-weight: 600;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.footer-head h2{
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 500px;
+    margin: 0;
+}
+.footer-text {
+    color: #FFFF;
+    text-align: center;
+}
+.footer-text span{
+    padding: 0 20px;
     
 }
