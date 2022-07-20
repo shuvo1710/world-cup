@@ -3,8 +3,10 @@ a{
     text-decoration: none;
 }
 body{
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
 }
+/*  css style start */
 .top-of-head{
     justify-content: center;
     display: flex;
@@ -17,13 +19,17 @@ body{
     
 }
 
-.mains{
+/* .mains{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     
+} */
+.main-head{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
-
 .main-text{
     color: #FFFF;
     width: 531px;
@@ -34,12 +40,7 @@ body{
     font-size: 60px;
     line-height: 80px;
 }
-.main-text p{
-    /* width: 506px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px; */
-}
+
 .main-text-btn{
     background-color: #DD0000;
     padding: 10px 15px;
@@ -146,7 +147,6 @@ body{
 .footer-head{
     color: #FFFF;
     text-align: center;
-    
     font-weight: 600;
     font-size: 40px;
     display: flex;
@@ -157,15 +157,108 @@ body{
 }
 .footer-head h2{
     padding-bottom: 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    width: 500px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    width: 70%;
     margin: 0;
 }
 .footer-text {
     color: #FFFF;
     text-align: center;
+    padding-top: 30px;
 }
 .footer-text span{
     padding: 0 20px;
+
+}
+.footer-icon{
+    text-align: center;
+    color: #FFFF;
+    margin-top: 15px;
     
+}
+.footer-icon i{
+    padding: 0 10px;
+    font-size: 20px;
+    color: #E8E8E8;
+}
+
+/* media query */
+/* mobile device*/
+@media  screen and (max-width:688px) {
+    
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .main-head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .main-text{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .main-img{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .mathches-info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-head{
+        text-align: center;
+    }
+    .footer-text{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+}
+/* tablet device */
+@media  screen and (min-width:688px) and (max-width:992px) {
+    .top-of-head{
+        width: 100%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        
+    }
+    .container{
+        width: 80%;
+        /* display: flex;
+        justify-content: space-between;
+        overflow: hidden; */
+        
+    }
+    .main-head{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+    .main-img {
+        width: 100%;
+    }
+    .container-2, #footer{
+        display: none;
+    }
 }
