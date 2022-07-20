@@ -1,0 +1,137 @@
+/* common css */
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.top-of-head{
+    justify-content: center;
+    display: flex;
+    
+}
+.container{
+    background-color: #161616;
+    width: 1190px;
+    border-radius: 15px;
+    
+}
+
+.mains{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+.main-text{
+    color: #FFFF;
+    width: 531px;
+}
+.main-text h2{
+    width: 531px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+}
+.main-text p{
+    /* width: 506px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; */
+}
+.main-text-btn{
+    background-color: #DD0000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #FFFF;
+
+   
+
+}
+.main-text-btn a{
+    color: #FFFF;
+
+}
+
+.main-img img{
+    width: 100%;
+    height: 500px;
+    border: 0;
+    
+    
+}
+.container-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+}
+.mathches-info{
+    width: 1190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    
+    
+}
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+  
+}
+.match{
+    
+    border: 2px solid red;
+    padding: 20px 20px ;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.matches-update{
+    background-color: #161616;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;  
+    border-radius: 10px; 
+}
+.matches-update-btn{
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px; 
+    border: none; 
+    font-size: 18px;
+    font-weight: 400;
+}
+.matches-update-btn:hover{
+    background-color: #DD0000;
+    
+}
+.flag-images{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#vs{
+    margin: 0 5px;
+    font-weight: 500;
+}
+.match-time{
+    text-align: center;
+}
+.match-time h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+.match-time p{
+    margin: 0;
+    font-size: 16px;
+   font-weight: 400;
+   color: #4D4D4D;
+    
+}
