@@ -205,6 +205,13 @@ body{
 .team-text{
     margin-left: 10px;
 }
+.team-btn{
+    background-color: #DD0000;
+    border: none;
+    border-radius: 5px;
+    color: #FFFF;
+    padding: 10px 10px ;
+}
 
 /* media query */
 /* 1st page  */
