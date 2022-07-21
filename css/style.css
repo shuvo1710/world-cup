@@ -72,9 +72,7 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 50px;
-
-    
-    
+ 
 }
 .matches{
     display: grid;
@@ -180,7 +178,36 @@ body{
     color: #E8E8E8;
 }
 
+.mathches-info{
+    display: flex;
+    justify-content: space-between;
+}
+.matches-update{
+
+    margin-right: 30px;
+    align-items: stretch;
+}
+.teams{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.team{
+    
+    border: 2px solid #E8E8E8;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.team-img{
+    width: 100%;
+}
+.team-text{
+    margin-left: 10px;
+}
+
 /* media query */
+/* 1st page  */
 /* mobile device*/
 @media  screen and (max-width:688px) {
     
@@ -267,9 +294,50 @@ body{
    }
   .mehedi{
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
+   
    
   }
 
+}
+/* 2nd page */
+/* mobile Device */
+@media screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team{
+        align-items: center;
+    }
+    .team-img{
+        width: 100%;
+    }
+}
+/* tablet device */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+          
+    }
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       }
+       .footer-text{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 15px;
+        text-align: center;
+       }
+      .mehedi{
+        text-align: center;
+      }
+    
 }
